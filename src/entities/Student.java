@@ -22,13 +22,12 @@ public class Student {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Student students = (Student) o;
-        return Objects.equals(studentId, students.studentId);
+        Student student = (Student) o;
+        return Objects.equals(studentId, student.studentId);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(studentId);
     }
-
 }
